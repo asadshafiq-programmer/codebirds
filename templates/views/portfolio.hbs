@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	{{> links}}
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:aaacc573-a69d-4da8-ba92-c87eb0123bb5;version=0?component_id=b3c862f3-b524-4ba0-b8db-180e69d237f2&api_key=CometServer1&access_token=1616352511_urn%3Aaaid%3Asc%3AUS%3Aaaacc573-a69d-4da8-ba92-c87eb0123bb5%3Bpublic_4e63f36dea21fe48e9d0a01758856659574a082b">
+
+</head>
+<style>
+    *{
+    font-family: 'Roboto', sans-serif;
+  }
+    .nav-link{
+    color: black;
+  }
+  .navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+    .my-port    
+  {
+    border-radius: 30px;
+   border:3px solid black;
+   background-image: url(https://cdn.shopify.com/s/files/1/0533/2089/files/5-websites-to-download-free-subtle-textures-subtle.jpg?5724472906039650661);
+
+    transition: transform .5s;
+  }
+  .my-port h3    
+  {
+   
+    
+    
+  }
+  .my-port img{
+      width: 300px;
+      
+  }
+  .my-port:hover{
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+@media screen and ( max-width: 1024px ) {
+img.responsive { width: 300px; }
+}
+
+@media screen and ( min-width: 600px ) {
+img.responsive { width: 500px; }
+}
+img.responsive { height: auto; }
+  
+</style>
+<body style="background-image: url(Background.png);">
+    {{> nav}}
+    
+    <div class="container">
+       <div class="row">
+           <div class="col-md-12 col-12 mx-auto">
+            <img class="rounded mx-auto d-block responsive"  src="https://codecreatives.pk/assets/frontend/images/our-portfolio-title.png">
+            <h5 style="text-align: center;">We deliver beautifully crafted projects with passion.</h5>
+           </div>
+       </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12 mx-auto">
+                <div class="creative">
+                    <h1>Our <span style="color: #6A4BC4; font-size: 3.8rem;">Creative</span> Work</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+        <div class="col-md-4 col-12">
+            <div class="my-port">
+                <img src="https://freepngimg.com/thumb/pepsi_logo/32189-7-pepsi-logo-photos-thumb.png" class="rounded mx-auto d-block">
+                <h4 style="text-align: center;">PEPSI</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="my-port">
+                <img src="https://freepngimg.com/thumb/pepsi_logo/32189-7-pepsi-logo-photos-thumb.png" class="rounded mx-auto d-block">
+                <h4 style="text-align: center;">PEPSI</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="my-port">
+                <img src="https://freepngimg.com/thumb/pepsi_logo/32189-7-pepsi-logo-photos-thumb.png" class="rounded mx-auto d-block">
+                <h4 style="text-align: center;">PEPSI</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="my-port">
+                <img src="https://freepngimg.com/thumb/pepsi_logo/32189-7-pepsi-logo-photos-thumb.png" class="rounded mx-auto d-block">
+                <h4 style="text-align: center;">PEPSI</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="my-port">
+                <img src="https://freepngimg.com/thumb/pepsi_logo/32189-7-pepsi-logo-photos-thumb.png" class="rounded mx-auto d-block">
+                <h4 style="text-align: center;">PEPSI</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="my-port">
+                <img src="https://freepngimg.com/thumb/pepsi_logo/32189-7-pepsi-logo-photos-thumb.png" class="rounded mx-auto d-block">
+                <h4 style="text-align: center;">PEPSI</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    {{> footer}}
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<title>Services</title>
+
+</head>
+<style>
+    *{
+    font-family: 'Roboto', sans-serif;
+  }
+     
+.nav-link{
+    color: black;
+  }
+  .navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+.extra-div
+{
+ background-color: #fff;
+ border: medium none;
+ border-radius: 30px;
+ padding:50px!important;
+ transition: 0.3s;
+ box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);
+ margin-top: 30px;
+ }
+ .extra-div:hover{
+     background-color:#BC58BE;
+ }
+  #str {
+   padding: 10px;
+   font-family: sans-serif;
+   font-size: 40px;
+   color: black;
+   font-weight: bold;
+   
+}
+p span {
+/*   background-color: orange; */
+  opacity: 0;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 300px;
+/*   padding-top: 150px; */
+  animation: zips 1s cubic-bezier(0.45, 0.05, 0.42, 0.96);
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+p span:nth-child(1) {
+/*   background: #ff0000; */
+  animation-delay: 0s;
+}
+
+p span:nth-child(2) {
+/*   background: #ff0000; */
+  animation-delay: .2s;
+}
+
+p span:nth-child(3) {
+/*   background: #ff0000; */
+  animation-delay: .3s;
+/*   padding-top: 200px; */
+}
+
+p span:last-child {
+  display: inline;
+  animation-delay: .3s;
+  line-height: 400px;
+}
+
+
+@keyframes zips {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    line-height: 25px;
+    opacity: 1;
+  }
+}
+
+@media screen and ( max-width: 1024px ) {
+img.responsive { width: 350px; }
+}
+
+@media screen and ( min-width: 600px ) {
+img.responsive { width: 600px; }
+}
+img.responsive { height: auto; }
+
+@media screen and ( max-width: 1024px ) {
+img.mainresponsive{ width: 370px; }
+}
+
+@media screen and ( min-width: 600px ) {
+img.mainresponsive { width: 1550px; }
+}
+img.mainresponsive { height: auto; }
+
+</style>
+</body>
+{{> nav}}
+<div class="container-fluid py-5">
+    <div class="row">
+    <div class="col-md-12 col-12">   
+       <img class="mainresponsive" style="margin-left: -5px; margin-right: -5px;" src="https://i.ibb.co/pZzkxry/My-Post-1.jpg">   
+    </div>
+    
+</div>
+</div>
+<div class="container" style="">
+    <div class="row ">
+        <div class="col-md-6 col-12 mt-5" style="text-align: center;">
+            <div class="container">
+           <div id="str"></div>
+            <p>
+  <span>
+   Letting the work speak for itself isn’t a cliche. It’s a testament to the passion and talent behind everything we do. It means we stand behind our work with research and experience from actual problems we’ve defined, measured, and solved. Therefore, no decision, from strategy and development to design and user experience, is made lightly, and you’ll always see it in the work.Explore how we can push what’s possible together.
+  </span>
+</p>
+        </div>
+        </div>
+         <div class="col-md-6 col-12 ">
+           <img class="responsive" src="https://lh5.googleusercontent.com/JHEVSUVZdF9OJ3Ldm1O5LsQRkpLpGw94sspgbLN28-HerzaMtWjUOw0GmDaxdyRY-jC9LCYbw5VlejhEVnKvyz3EBFYNSaJg1vpS5psQQtfQAIGFaCsGu1TwCsH4Dj41oQ8S7SnE">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-around py-5">
+        <div class="col-md-4 extra-div">
+            <a href="#">
+          <img src="https://img.icons8.com/nolan/64/mobile-order.png" class="img-responsive center-block d-block mx-auto"/>
+        </a>
+        <h4 class="pt-5" style="text-align: center;">WEB & Mobile</h4>
+            <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+        </div>
+        <div class="col-md-4 extra-div ">
+            <a href="#">
+          <img src="https://img.icons8.com/nolan/64/mobile-order.png" class="img-responsive center-block d-block mx-auto"/>
+        </a>
+        <h4 class="pt-5" style="text-align: center;">WEB & Mobile</h4>
+            <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+        </div>
+    </div>
+    <div class="row justify-content-around py-5">
+        <div class="col-md-4 extra-div">
+            <a href="#">
+          <img src="https://img.icons8.com/nolan/64/mobile-order.png" class="img-responsive center-block d-block mx-auto"/>
+        </a>
+        <h4 class="pt-5" style="text-align: center;">WEB & Mobile</h4>
+            <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+        </div>
+        <div class="col-md-4 extra-div">
+            <a href="#">
+          <img src="https://img.icons8.com/nolan/64/mobile-order.png" class="img-responsive center-block d-block mx-auto"/>
+        </a>
+        <h4 class="pt-5" style="text-align: center;">WEB & Mobile</h4>
+            <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+        </div>
+    </div>
+    <div class="row justify-content-around py-5">
+        <div class="col-md-4 extra-div">
+            <a href="#">
+          <img src="https://img.icons8.com/nolan/64/mobile-order.png" class="img-responsive center-block d-block mx-auto"/>
+        </a>
+        <h4 class="pt-5" style="text-align: center;">WEB & Mobile</h4>
+            <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+        </div>
+        <div class="col-md-4 extra-div">
+            <a href="#">
+          <img src="https://img.icons8.com/nolan/64/mobile-order.png" class="img-responsive center-block d-block mx-auto"/>
+        </a>
+        <h4 class="pt-5" style="text-align: center;">WEB & Mobile</h4>
+            <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+        </div>
+    </div>
+</div>
+{{> footer}}
+
+</body>
+<script>
+  var string = "Our Services";
+var str = string.split("");
+var el = document.getElementById('str');
+(function animate() {
+str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+var running = setTimeout(animate, 90);
+})();
+
+
+</script>
+</html>

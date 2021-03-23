@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We are</title>
+    {{> links}}
+</head>
+<style>
+    @media screen and ( max-width: 1024px ) {
+img.mainresponsive{ width: 370px; }
+}
+
+@media screen and ( min-width: 600px ) {
+img.mainresponsive { width: 1550px; }
+}
+img.mainresponsive { height: auto; }
+
+
+
+
+@media screen and ( max-width: 1024px ) {
+img.responsive { width: 250px; }
+}
+
+@media screen and ( min-width: 600px ) {
+img.responsive { width: 400px; }
+}
+img.responsive { height: auto; }
+</style>
+<body>
+    {{>nav}}
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-md-12 col-12">
+        <img class="mainresponsive" style="margin-left: -10px;"   src="https://i.ibb.co/THQsKkV/My-Post-2sadasda-2259x800.jpg">   
+
+        </div>
+    </div>
+    </div>
+    <div class="conatiner">
+        <div class="row  justify-content-around">
+            <div class="col-md-4 col-12 ">
+                <div class="container-fluid">
+                <h1 class="py-3 text-center" style="color: #6A4BC4; text-transform: capitalize; font-size: 3.8rem;"> provocative creative agency</h1>
+                <p style="text-align: center;">We are a provocative creative agency focused on imagining and building highly-interactive digital user experiences that push the limits of design and development. Thinkers. Doers. Agents of Change. A full-service creative agency with passion for ingenuity and innovation in every medium, focused on the user experience and accountable to business results.
+We dissect where our clients are and plot a course for where they want to be using an inclusive and collaborative process integrating strategy, user experience, design, and engineering from project ideation through completion. We’re boundary pushers. Challengers of the status quo. Together, we’ll come up with amazing ideas that get results.</p>
+            </div>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+                <img class="rounded responsive " src="https://online.codingblocks.com/img/upliftCareerBoy.svg">
+            </div>
+        </div>
+    </div>
+        <div class="conatiner">
+        <div class="row  justify-content-around">
+            <div class="col-md-4 col-12">
+                <div class="container container-fluid">
+                <h1 class="py-3 text-center" style="color: #6A4BC4; text-transform: capitalize; font-size: 3.8rem;"> our hero</h1>
+                <p style="text-align: center;">We are a provocative creative agency focused on imagining and building highly-interactive digital user experiences that push the limits of design and development. Thinkers. Doers. Agents of Change. A full-service creative agency with passion for ingenuity and innovation in every medium, focused on the user experience and accountable to business results.
+We dissect where our clients are and plot a course for where they want to be using an inclusive and collaborative process integrating strategy, user experience, design, and engineering from project ideation through completion. We’re boundary pushers. Challengers of the status quo. Together, we’ll come up with amazing ideas that get results.</p>
+            </div>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+                <img class="rounded responsive " src="https://next-cdn.codementor.io/images/landing-page/visit-arc.svg">
+            </div>
+        </div>
+    </div>
+    {{> team}}
+    {{> footer}}
+</body>
+</html>

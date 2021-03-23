@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="public/css/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Birds</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="shortcut icon" href="https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:aaacc573-a69d-4da8-ba92-c87eb0123bb5;version=0?component_id=b3c862f3-b524-4ba0-b8db-180e69d237f2&api_key=CometServer1&access_token=1616352511_urn%3Aaaid%3Asc%3AUS%3Aaaacc573-a69d-4da8-ba92-c87eb0123bb5%3Bpublic_4e63f36dea21fe48e9d0a01758856659574a082b">
+</head>
+<style>
+  *{
+    font-family: 'Roboto', sans-serif;
+  }
+    body{
+    background-image: url(https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:aaacc573-a69d-4da8-ba92-c87eb0123bb5;version=0?component_id=0061118e-26be-4e3a-b333-9dd1dd069454&api_key=CometServer1&access_token=1616269258_urn%3Aaaid%3Asc%3AUS%3Aaaacc573-a69d-4da8-ba92-c87eb0123bb5%3Bpublic_124919567122f25401b0a549d73cd181fc839f6a);
+    background-color: #F5F5F5;
+  }
+  .nav-link{
+    color: black;
+  }
+  .navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+    #str {
+   padding: 20px;
+   font-size: 60px;
+   color: black;
+   font-weight: bold;
+   
+}
+p span {
+/*   background-color: orange; */
+  opacity: 0;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 300px;
+/*   padding-top: 150px; */
+  animation: zips 1s cubic-bezier(0.45, 0.05, 0.42, 0.96);
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+p span:nth-child(1) {
+/*   background: #ff0000; */
+  animation-delay: 0s;
+}
+
+p span:nth-child(2) {
+/*   background: #ff0000; */
+  animation-delay: .2s;
+}
+
+p span:nth-child(3) {
+/*   background: #ff0000; */
+  animation-delay: .3s;
+/*   padding-top: 200px; */
+}
+
+p span:last-child {
+  display: inline;
+  animation-delay: .3s;
+  line-height: 400px;
+}
+
+
+@keyframes zips {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    line-height: 25px;
+    opacity: 1;
+  }
+}
+
+  .Home_page_main{
+    margin-top:0px;
+    
+  }
+  .Home_page_main h1{
+    color:black;
+    font-size: 3.8rem;
+  }
+  .Home_page_main p{
+    color: black;
+    font-size: 1.8rem;
+  }
+  .box
+  {
+
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);
+  }
+  .header2
+{
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  text-align: center;
+}
+.extra-div
+{
+ background-color: #fff;
+ border: medium none;
+ border-radius: 30px;
+ padding:50px!important;
+ transition: 0.3s;
+ box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);
+ }
+ .extra-div:hover
+{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+ }
+ @media(max-width:996px)
+ {
+  .extra-div
+  {
+    margin-bottom:50px;
+  }
+ }
+
+ /* .ourwork h1::after{
+	content:"";
+	width:350px;
+	height:auto;
+	border:2px solid #854FC2;
+	position:absolute;
+	bottom:0;
+  margin-bottom: 30px;
+	
+} */
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    color: white;
+    border-radius: 50%;
+    margin-top: -120px;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+
+.btn-primary {
+  background: transparent linear-gradient(106deg, #6A4BC4 0%, #854FC2 64%, #BC58BE 100%) 0% 0% no-repeat padding-box;
+border: 1px solid #7D4EC2;
+border-radius: 3px;
+opacity: 1;
+width: 120px;
+}
+.page-width {
+  max-width: 1200px;
+  margin: auto;
+}
+.text-left {
+  text-align: left;
+}
+.quotes {
+  /* display: flex; */
+  padding: 5rem 2rem;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quotes-slide {
+  width: 33%;
+  padding: 3rem;
+  background-color: white;
+  opacity: .4;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 1px #d5d5d5;
+  line-height: 1.75;
+  font-family: 'Roboto', sans-serif;
+  transition: all .5s ease;
+  outline: none;
+}
+
+.quotes-slide--active {
+    transform: scale(1.2);
+    z-index: 10;
+    opacity: 1;
+    border: none;
+    box-shadow: 1px 0px 10px 5px #eaeaea;
+    color: #222222;
+}
+blockquote {
+  margin: 0;
+}
+cite{
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+}
+cite::before {
+    content: '\2014 \0020';
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: #6A4BC4;
+}
+.happyclient
+{
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 150px;
+
+}
+.box
+{
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0,0.2);
+  box-shadow:  0 5px 10px 0 rgb(0, 0, 0,0.3);
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
+.box:hover
+{
+  background:#6A4BC4;
+}
+.box:hover p
+{
+  color: #fff;
+}
+.carousel-indicators
+{
+  position: absolute;
+  right: 0;
+  margin-bottom: -60px!important;
+}
+.carousel-indicators li
+{
+background:white!important;
+}
+
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color:#6A4BC4;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color:#6A4BC4;
+}
+.box a
+{
+position: relative;
+}
+.box a img
+{
+
+width: 100px;
+height: 100px;
+border-radius: 50%;
+margin-top: 20px;
+}
+.box a:after
+{
+  content: "\f10d";
+  font-family: FontAwesome;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to right,#1e5799 0%, #3ccdbb 0%,#6A4BC4 10%);
+  color: #fff;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.box h1
+{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+.box h2
+{
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+ @media(max-width:996px)
+ {
+  .mobile-pe-gayab
+  {
+    visibility:hidden;
+  }
+ }
+ 
+</style>
+<body>
+    {{> nav}}
+    <div class="container">
+<div class="row">
+  <div class="col-lg-10 col-md-10 mx-auto text-center">
+    <div class="Home_page_main pt-5 pb-5 my-5 py-sm-5 ">
+   <div id="str"></div>
+   <p>
+  <span>
+    That Help Improve Businesses.
+  </span>
+</p>
+  </div>
+  </div>
+</div>
+</div>
+<section class="header2 ">
+  <div class="container mb-5 pb-5">
+    <div class="row">
+      <div class=" extra-div col-lg-2 col-md-2 col-12 mx-auto ">
+        <a href="#">
+          <img src="https://i.ibb.co/3vTZ7x2/Logo-Desing.png">
+        </a>
+        <h5 class="pt-5">EASY TO USE</h5>
+
+      </div>
+
+      <div class=" extra-div col-lg-2 col-md-2 col-12 mx-auto">
+        <a href="#"><img src="https://i.ibb.co/Cw7pf9k/Website-Design-1.png">
+</a>
+<h5 class="pt-5">EASY TO USE</h5>
+
+      </div>
+
+      <div class="extra-div col-lg-2 col-md-2 col-12 mx-auto">
+        <a href="#"><img src="https://i.ibb.co/kg02T0h/App.png">
+</a>
+        <h5 class="pt-5">EASY TO USE</h5>
+      </div>
+
+      <div class="extra-div col-lg-2 col-md-2 col-12 mx-auto">
+        <a href="#"><img src="https://i.ibb.co/3vTZ7x2/Logo-Desing.png">
+</a>
+        <h5 class="pt-5">EASY TO USE</h5>
+       
+      </div>
+      <div class="extra-div col-lg-2 col-md-2 col-12 mx-auto">
+        <a href="#"><img src="https://i.ibb.co/NxjcT2J/Branding.png"/>
+</a>
+        <h5 class="pt-5">EASY TO USE</h5>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-12 mx-auto text-center">
+      <a href="#about-section">
+      <img class="rounded" src="https://i.ibb.co/NjVZTmV/arrow-pointing-to-right.png">
+      </a>
+    </div>
+  </div>
+</div>
+<!-- 
+<div class="container pb-5">
+<div class="row align-items-center pb-5">
+  <div class="col-md-2 mx-auto box py-5">
+<img class="pl-5" src="icons8-ios-logo-64.png">
+    <p class="text-center">col 1</p>
+  </div>
+  <div class="col-md-2 mx-auto box py-5">
+    <img class="img-fluid" src="icons8-ios-logo-64.png">
+    <p class="text-center">col 2</p>
+  </div>
+  <div class="col-md-2 mx-auto box py-5">
+    <img src="icons8-ios-logo-64.png">
+    <p class="text-center">col 3</p>
+  </div>
+  <div class="col-md-2 mx-auto box py-5">
+    <img src="icons8-ios-logo-64.png">
+    <p class="text-center">col 4</p>
+  </div>
+  <div class="col-md-2 mx-auto box py-5">
+    <img src="icons8-ios-logo-64.png">
+    <p class="text-center">col 5</p>
+  </div>
+  
+</div>
+</div>
+</div> -->
+<!--about-->
+<div id="about-section">
+<div class="container-fluid mt-5 pt-5" style="background-color: #fafafb;">
+  <div class="container">
+    
+ 
+  <div class="row">
+    <div class=" col-lg-6 col-md-6 col-12 mx-auto ">
+     <img  class="img-fluid pb-5" src="https://i.ibb.co/nDGgvVb/About-Image.png">
+    </div>
+    <div class=" col-lg-6 col-md-6 col-12">
+      <h1>About us</h1>
+      <p>We are a provocative creative agency focused on imagining and building highly-interactive digital user experiences that push the limits of design and development. Thinkers. Doers. Agents of Change. A full-service creative agency with passion for ingenuity and innovation in every medium, focused on the user experience and accountable to business results.</p>
+      <p>We dissect where our clients are and plot a course for where they want to be using an inclusive and collaborative process integrating strategy, user experience, design, and engineering from project ideation through completion. We’re boundary pushers. Challengers of the status quo. Together, we’ll come up with amazing ideas that get results.</p>
+      
+      <div class="row mobile-pe-gayab">
+        <div class=" col-lg-2 col-md-2 col-12 mx-auto">
+         
+        </div>
+        <div class=" col-lg-2 col-md-2 col-12 mx-auto">
+          
+        </div>
+        <div class=" col-lg-2 col-md-2 col-12 mx-auto">
+         
+        </div>
+        <div class=" col-lg-2 col-md-2 col-12 mx-auto">
+         
+        </div>
+    </div>
+   
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- slider section start  -->
+<div class="container py-5">
+  <div class="row">
+    <div class="col-lg-6 col-lg-6 col-12 ourwork">
+      <h2 class="ml-5">Our <span style="color: #854FC2; font-size: 70px; font-style: bold;">Creative </span>Project  </h2>
+</div>
+
+    
+  </div>
+</div>
+<!-- slider section end  -->
+<div class="container-fluid" style="background-color: #222239;">
+<div class="container" >
+  <div class="row blog">
+      <div class="col-md-12">
+          <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                  <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#blogCarousel" data-slide-to="1"></li>
+              </ol>
+
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <a href="#">
+                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%; height: 500px;">
+                                  <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
+                              </a>
+                          </div>
+                          <div class="col-md-3">
+                              <a href="#">
+                                  <img src="https://i.ibb.co/k2cTBtp/Group-11161.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
+                                  <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
+                              </a>
+                          </div>
+                          <div class="col-md-3">
+                              <a href="#">
+                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
+                                  <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
+                            </a>
+                          </div>
+                          <div class="col-md-3">
+                              <a href="#">
+                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
+                                  <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
+                              </a>
+                          </div>
+                      </div>
+                      <!--.row-->
+                  </div>
+                  <!--.item-->
+
+                  <div class="carousel-item">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <a href="#">
+                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
+                              <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
+                              </a>
+                          </div>
+                          <div class="col-md-3">
+                              <a href="#">
+                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
+
+                              <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
+                              </a>
+                          </div>
+                          <div class="col-md-3">
+                              <a href="#">
+                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
+
+                              <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
+                              </a>
+                          </div>
+                          <div class="col-md-3">
+                              <a href="#">
+                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
+
+                              <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
+                              </a>
+                          </div>
+                      </div>
+                      <!--.row-->
+                  </div>
+                  <!--.item-->
+
+              </div>
+              <!--.carousel-inner-->
+          </div>
+          <!--.Carousel-->
+
+      </div>
+  </div>
+</div>
+
+</div>
+<div class="container py-5">
+  <div class="row"> 
+    <div class=" col-lg-3 col-md-3 col-8 mx-auto offset-sm-4" style="margin-bottom:20px;">  
+      <div class="card" style="width: 15rem; border-radius: 30px; background-color: #FFFFFF; box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);">
+        <img class="card-img-top" src="https://i.ibb.co/7z4cqmv/v1.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">Quick Turnaround</h5>
+      <p class="card-text" style="text-align: center;">Contrary to popular belief, Lorem Ipsum.</p>
+    </div>     
+  </div>
+</div>
+<div class=" col-lg-3 col-md-3 col-8 mx-auto offset-sm-4" style="margin-bottom:20px;">  
+  <div class="card" style="width: 15rem; border-radius: 30px; background-color: #FFFFFF; box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);">
+    <img class="card-img-top" src="https://i.ibb.co/tPKvm81/Industry-Specific.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">Quick Turnaround</h5>
+      <p class="card-text" style="text-align: center;">Contrary to popular belief, Lorem Ipsum.</p>
+    </div>     
+  </div>
+</div>
+<div class=" col-lg-3 col-md-3 col-8  mx-auto offset-sm-4" style="margin-bottom:20px;">  
+  <div class="card" style="width: 15rem; border-radius: 30px; background-color: #FFFFFF; box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);">
+    <img class="card-img-top" src="https://i.ibb.co/52NhWh4/Interactive-Design.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">Interactive Design</h5>
+      <p class="card-text" style="text-align: center;">TContrary to popular belief, Lorem Ipsum.</p>
+    </div>     
+  </div>
+</div>
+<div class=" col-lg-3 col-md-3 col-8 mx-auto offset-sm-4" style="margin-bottom:20px;">  
+  <div class="card" style="width: 15rem; border-radius: 30px; background-color: #FFFFFF; box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);">
+    <img class="card-img-top" src="https://i.ibb.co/tPKvm81/Industry-Specific.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">Quick Turnaround</h5>
+      <p class="card-text" style="text-align: center;">Contrary to popular belief, Lorem Ipsum.</p>
+    </div>     
+  </div>
+</div>
+</div>
+</div>
+<div class="container" style="background-image: url(Background@2x.png);">
+  <div class="col-md-12 py-3 mx-auto" style="text-align: center;">
+    <h6>LIKE WHAT YOU SEE?</h6>
+    <h3>Let's plan your project</h3>
+  </div>
+  <div class="row py-3">
+    <div class="col-md-3">
+      <div class="form-group">
+        <input type="text" class="form-control" id="usr" placeholder="Name">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+
+        <input type="text" class="form-control" id="usr" placeholder="Email">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <textarea class="form-control" rows="1" id="comment" placeholder="Message"></textarea>
+      </div>
+    </div>
+    <div class="col-md-3 mx-auto text-center">
+      <button type="button" class="btn btn-primary">Primary</button>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonials-->
+<section class="happyclient" style="">
+  <div class="container headings text-center">
+    <h1 class="text-center font-weight-bold">OUR HAPPY CLIENTS</h1>
+    <p class="text-capitalize pt-1">Our Satisfied Customer says</p>
+   </div>
+   <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner container">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="box">
+            <a href="#"><img src="https://i.ibb.co/yWrS8mJ/Ellipse-466.png" alt="not found " class="img-fluid img-thumbnail" ></a>
+            <p class="m-4">this the best marketing agnecy they have a grate team to work with me </p>
+            <h1> Sheikh Wasif</h1>
+            <h2>Project Manager </h2>
+          </div>
+          
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="box">
+            <a href="#"><img src="https://i.ibb.co/yWrS8mJ/Ellipse-466.png" alt="not found " class="img-fluid img-thumbnail" ></a>
+            <p class="m-4">this the best marketing agnecy they have a grate team to work with me </p>
+            <h1> Sheikh Wasif</h1>
+            <h2>Project Manager </h2>
+          </div>
+          
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="box">
+            <a href="#"><img src="https://i.ibb.co/yWrS8mJ/Ellipse-466.png" alt="not found " class="img-fluid img-thumbnail" ></a>
+            <p class="m-4">this the best marketing agnecy they have a grate team to work with me </p>
+            <h1> Sheikh Wasif</h1>
+            <h2>Project Manager </h2>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="box">
+            <a href="#"><img src="https://i.ibb.co/yWrS8mJ/Ellipse-466.png" alt="not found " class="img-fluid img-thumbnail" ></a>
+            <p class="m-4">this the best marketing agnecy they have a grate team to work with me </p>
+            <h1> xyz asad</h1>
+            <h2>Project Manager </h2>
+          </div>
+          
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="box">
+            <a href="#"><img src="https://i.ibb.co/yWrS8mJ/Ellipse-466.png" alt="not found " class="img-fluid img-thumbnail" ></a>
+            <p class="m-4">this the best marketing agnecy they have a grate team to work with me </p>
+            <h1> xyz asadf</h1>
+            <h2>Project Manager </h2>
+          </div>
+          
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="box">
+            <a href="#"><img src="https://i.ibb.co/yWrS8mJ/Ellipse-466.png" alt="not found " class="img-fluid img-thumbnail" ></a>
+            <p class="m-4">this the best marketing agnecy they have a grate team to work with me </p>
+            <h1> xuz asadf</h1>
+            <h2>Project Manager </h2>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</section>
+<!-- Testimonials End-->
+    {{> footer}}
+    
+</body>
+<script>
+  var string = "Creating Software Solutions";
+var str = string.split("");
+var el = document.getElementById('str');
+(function animate() {
+str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+var running = setTimeout(animate, 90);
+})();
+
+
+</script>
+</html>
