@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="stylesheet" href="public/css/style.css">
-
+     <link rel="stylesheet" href="public/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,7 @@
     font-family: 'Roboto', sans-serif;
   }
     body{
-    background-image: url(https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:aaacc573-a69d-4da8-ba92-c87eb0123bb5;version=0?component_id=0061118e-26be-4e3a-b333-9dd1dd069454&api_key=CometServer1&access_token=1616269258_urn%3Aaaid%3Asc%3AUS%3Aaaacc573-a69d-4da8-ba92-c87eb0123bb5%3Bpublic_124919567122f25401b0a549d73cd181fc839f6a);
+    
     background-color: #F5F5F5;
   }
   .nav-link{
@@ -134,16 +133,6 @@ p span:last-child {
   }
  }
 
- /* .ourwork h1::after{
-	content:"";
-	width:350px;
-	height:auto;
-	border:2px solid #854FC2;
-	position:absolute;
-	bottom:0;
-  margin-bottom: 30px;
-	
-} */
 .blog .carousel-indicators {
 	left: 0;
 	top: auto;
@@ -198,25 +187,7 @@ width: 120px;
   outline: none;
 }
 
-.quotes-slide--active {
-    transform: scale(1.2);
-    z-index: 10;
-    opacity: 1;
-    border: none;
-    box-shadow: 1px 0px 10px 5px #eaeaea;
-    color: #222222;
-}
-blockquote {
-  margin: 0;
-}
-cite{
-  font-style: normal;
-  font-family: 'Roboto', sans-serif;
-  font-size: .9rem;
-}
-cite::before {
-    content: '\2014 \0020';
-}
+
 .icon {
   width: 25px;
   height: 25px;
@@ -242,6 +213,14 @@ cite::before {
   background:#6A4BC4;
 }
 .box:hover p
+{
+  color: #fff;
+}
+.box:hover h1
+{
+  color: #fff;
+}
+.box:hover h2
 {
   color: #fff;
 }
@@ -319,10 +298,14 @@ margin-top: 20px;
     visibility:hidden;
   }
  }
- 
+ .my-bg{
+   background-image: url(https://i.ibb.co/Kqwfmx7/Group-11679.png);
+ }
 </style>
 <body>
-    {{> nav}}
+    
+    <div class="my-bg">
+      {{> nav}}
     <div class="container">
 <div class="row">
   <div class="col-lg-10 col-md-10 mx-auto text-center">
@@ -344,33 +327,33 @@ margin-top: 20px;
         <a href="#">
           <img src="https://i.ibb.co/3vTZ7x2/Logo-Desing.png">
         </a>
-        <h5 class="pt-5">EASY TO USE</h5>
+        <h5 class="pt-5">Graphic Design</h5>
 
       </div>
 
       <div class=" extra-div col-lg-2 col-md-2 col-8 mx-auto">
         <a href="#"><img src="https://i.ibb.co/Cw7pf9k/Website-Design-1.png">
 </a>
-<h5 class="pt-5">EASY TO USE</h5>
+<h5 class="pt-5">Web Services</h5>
 
       </div>
 
       <div class="extra-div col-lg-2 col-md-2 col-8 mx-auto">
         <a href="#"><img src="https://i.ibb.co/kg02T0h/App.png">
 </a>
-        <h5 class="pt-5">EASY TO USE</h5>
+        <h5 class="pt-5">Mobile App</h5>
       </div>
 
       <div class="extra-div col-lg-2 col-md-2 col-8 mx-auto">
         <a href="#"><img src="https://i.ibb.co/3vTZ7x2/Logo-Desing.png">
 </a>
-        <h5 class="pt-5">EASY TO USE</h5>
+        <h5 class="pt-5">Digital Marketing</h5>
        
       </div>
       <div class="extra-div col-lg-2 col-md-2 col-8 mx-auto">
         <a href="#"><img src="https://i.ibb.co/NxjcT2J/Branding.png"/>
 </a>
-        <h5 class="pt-5">EASY TO USE</h5>
+        <h5 class="pt-5">Content Writing</h5>
         
       </div>
     </div>
@@ -385,36 +368,10 @@ margin-top: 20px;
     </div>
   </div>
 </div>
-<!-- 
-<div class="container pb-5">
-<div class="row align-items-center pb-5">
-  <div class="col-md-2 mx-auto box py-5">
-<img class="pl-5" src="icons8-ios-logo-64.png">
-    <p class="text-center">col 1</p>
-  </div>
-  <div class="col-md-2 mx-auto box py-5">
-    <img class="img-fluid" src="icons8-ios-logo-64.png">
-    <p class="text-center">col 2</p>
-  </div>
-  <div class="col-md-2 mx-auto box py-5">
-    <img src="icons8-ios-logo-64.png">
-    <p class="text-center">col 3</p>
-  </div>
-  <div class="col-md-2 mx-auto box py-5">
-    <img src="icons8-ios-logo-64.png">
-    <p class="text-center">col 4</p>
-  </div>
-  <div class="col-md-2 mx-auto box py-5">
-    <img src="icons8-ios-logo-64.png">
-    <p class="text-center">col 5</p>
-  </div>
-  
 </div>
-</div>
-</div> -->
 <!--about-->
 <div id="about-section">
-<div class="container-fluid mt-5 pt-5" style="background-color: #fafafb;">
+<div class="container-fluid mt-5 pt-5" style="background-image: url(https://i.ibb.co/vLHkqf1/Group-11675.png);">
   <div class="container">
     
  
@@ -453,108 +410,19 @@ margin-top: 20px;
     <div class="col-lg-6 col-lg-6 col-12 ourwork">
       <h2 class="ml-5">Our <span style="color: #854FC2; font-size: 70px; font-style: bold;">Creative </span>Project  </h2>
 </div>
-
-    
   </div>
 </div>
-<!-- slider section end  -->
-<div class="container-fluid" style="background-color: #222239;">
-<div class="container" >
-  <div class="row blog">
-      <div class="col-md-12">
-          <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-
-              <ol class="carousel-indicators">
-                  <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#blogCarousel" data-slide-to="1"></li>
-              </ol>
-
-              <!-- Carousel items -->
-              <div class="carousel-inner">
-
-                  <div class="carousel-item active">
-                      <div class="row">
-                          <div class="col-md-3">
-                              <a href="#">
-                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%; height: 500px;">
-                                  <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
-                              </a>
-                          </div>
-                          <div class="col-md-3">
-                              <a href="#">
-                                  <img src="https://i.ibb.co/k2cTBtp/Group-11161.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
-                                  <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
-                              </a>
-                          </div>
-                          <div class="col-md-3">
-                              <a href="#">
-                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
-                                  <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
-                            </a>
-                          </div>
-                          <div class="col-md-3">
-                              <a href="#">
-                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
-                                  <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
-                              </a>
-                          </div>
-                      </div>
-                      <!--.row-->
-                  </div>
-                  <!--.item-->
-
-                  <div class="carousel-item">
-                      <div class="row">
-                          <div class="col-md-3">
-                              <a href="#">
-                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
-                              <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
-                              </a>
-                          </div>
-                          <div class="col-md-3">
-                              <a href="#">
-                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
-
-                              <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
-                              </a>
-                          </div>
-                          <div class="col-md-3">
-                              <a href="#">
-                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
-
-                              <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
-                              </a>
-                          </div>
-                          <div class="col-md-3">
-                              <a href="#">
-                                  <img src="https://i.ibb.co/98TN9jB/Group1.png" alt="Image" class="img-fluid" style="max-width:100%;height: 500px;">
-
-                              <h3 style="text-align: center; color:#000; height:20px; margin-top: -25px; background:#fff; border-radius: 10px; " class="mb-5 pb-5 text-center">Mobile app</h3>
-                              </a>
-                          </div>
-                      </div>
-                      <!--.row-->
-                  </div>
-                  <!--.item-->
-
-              </div>
-              <!--.carousel-inner-->
-          </div>
-          <!--.Carousel-->
-
-      </div>
+<div class="container d-flex justify-content-between">
+  {{> Creative}}
   </div>
-</div>
-
-</div>
 <div class="container py-5">
   <div class="row"> 
     <div class=" col-lg-3 col-md-3 col-8 mx-auto offset-sm-4" style="margin-bottom:20px;">  
       <div class="card" style="width: 15rem; border-radius: 30px; background-color: #FFFFFF; box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);">
         <img class="card-img-top" src="https://i.ibb.co/TPWpNrk/Quick-Turnaround-2x.png" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style="text-align: center;">Quick Turnaround</h5>
-      <p class="card-text" style="text-align: center;">Contrary to popular belief, Lorem Ipsum.</p>
+      <h5 class="card-title" style="text-align: center;">Marketing Services</h5>
+      <p class="card-text" style="text-align: center;">We blend fresh ideas with expertise to ensure you have what it takes, to make the right kind of noise in the digital sphere, and simply, Shout Out Loud.</p>
     </div>     
   </div>
 </div>
@@ -562,8 +430,8 @@ margin-top: 20px;
   <div class="card" style="width: 15rem; border-radius: 30px; background-color: #FFFFFF; box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);">
     <img class="card-img-top" src="https://i.ibb.co/cLs4j0Y/100-Ownership-2x.png" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style="text-align: center;">Quick Turnaround</h5>
-      <p class="card-text" style="text-align: center;">Contrary to popular belief, Lorem Ipsum.</p>
+      <h5 class="card-title" style="text-align: center;">STRATEGY SERVICES</h5>
+      <p class="card-text" style="text-align: center;">Brainstorming and harvesting fresh ideas along with our never-ending interest and creativity for everything social, is the key to unbind your brands potential interest.</p>
     </div>     
   </div>
 </div>
@@ -571,23 +439,24 @@ margin-top: 20px;
   <div class="card" style="width: 15rem; border-radius: 30px; background-color: #FFFFFF; box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);">
     <img class="card-img-top" src="https://i.ibb.co/NC17P6c/Interactive-Design-2x.png" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style="text-align: center;">Interactive Design</h5>
-      <p class="card-text" style="text-align: center;">TContrary to popular belief, Lorem Ipsum.</p>
+      <h5 class="card-title" style="text-align: center;">CREATIVE SERVICES</h5>
+      <p class="card-text" style="text-align: center;">With an itch for creativity, we obsess over details. We know the alchemy of creative and innovative skills, blended to spawn ideas that reflect your brand.</p>
     </div>     
   </div>
 </div>
 <div class=" col-lg-3 col-md-3 col-8 mx-auto offset-sm-4" style="margin-bottom:20px;">  
   <div class="card" style="width: 15rem; border-radius: 30px; background-color: #FFFFFF; box-shadow: 0 0 25px 0 rgb(0, 0, 0,0.3);">
-    <img class="card-img-top" src="https://i.ibb.co/NC17P6c/Interactive-Design-2x.png" alt="Card image cap">
+    <img class="card-img-top" src="https://i.ibb.co/qDj3m1z/Group-11682.png" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style="text-align: center;">Quick Turnaround</h5>
-      <p class="card-text" style="text-align: center;">Contrary to popular belief, Lorem Ipsum.</p>
+      <h5 class="card-title" style="text-align: center;">TECHNICAL SERVICES</h5>
+      <p class="card-text" style="text-align: center;">We design, develop and look after your digital property. Our technical insight will help you turn your business dreams, into a responsive reality.</p>
     </div>     
   </div>
 </div>
 </div>
 </div>
-<div class="container" style="background-image: url(Background@2x.png);">
+<div class="container-fluid" style="background-image: url(https://t3.ftcdn.net/jpg/01/98/05/16/360_F_198051606_qB9GmDGg79tCtoiHkuTtYAQlqpN6feyL.jpg);">
+<div class="container" >
   <div class="col-md-12 py-3 mx-auto" style="text-align: center;">
     <h6>LIKE WHAT YOU SEE?</h6>
     <h3>Let's plan your project</h3>
@@ -614,6 +483,7 @@ margin-top: 20px;
     </div>
     </div>
   </div>
+</div>
 </div>
 <!-- Testimonials-->
 <section class="happyclient" style="">

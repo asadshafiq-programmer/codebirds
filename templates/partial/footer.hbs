@@ -303,28 +303,70 @@
   display: inline-block;
   padding-left: 20px; }
 
-.back-to-top {
-  position: relative;
-  z-index: 2; }
-  .back-to-top .btn-dark {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    padding: 0;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #2e2e2e;
-    border-color: #2e2e2e;
-    display: none;
-    z-index: 999;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
-    .back-to-top .btn-dark:hover {
-      cursor: pointer;
-      background: #FA6742;
-      border-color: #FA6742; }
+#button {
+  display: inline-block;
+  background-color: rebeccapurple;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
 </style>
 <body>
     <!-- fotter-->
@@ -337,33 +379,24 @@
                       <img src="https://i.ibb.co/C9q4jmD/logo.png" alt="footer_logo" class="img-fluid">
                   </a>
                   <p class="footer-info-text">
-                     CODEBIRDS is one of the top Software company. We believe that technology plays vital role for growing people and businesses. That’s why we always try to help people in achieving their objectives by using best technologies and solutions
+                     CODEBIRDS is one of the top Software company. We believe that technology plays vital role for growing people and businesses. 
                   </p>
                   <div class="footer-social-link">
                       <h3>Follow us</h3>
                       <ul>
                           <li>
-                              <a href="#">
+                              <a href="https://www.facebook.com/Codbirds-104096448439241">
                                   <i class="fa fa-facebook"></i>
                               </a>
                           </li>
+                          
                           <li>
-                              <a href="#">
-                                  <i class="fa fa-twitter"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <i class="fa fa-google-plus"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
+                              <a href="https://www.linkedin.com/in/cod-birds-289b49208/">
                                   <i class="fa fa-linkedin"></i>
                               </a>
                           </li>
                           <li>
-                              <a href="#">
+                              <a href="https://www.instagram.com/codbirds/">
                                   <i class="fa fa-instagram"></i>
                               </a>
                           </li>
@@ -374,7 +407,7 @@
               <!-- End Footer info -->
               <div class="footer-awarad">
                   <img src="images/icon/best.png" alt="">
-                  
+                   <p> </p>
               </div>
           </div>
           <!-- End Col -->
@@ -402,7 +435,7 @@
                           </div>
                           <!-- End contact Icon -->
                           <div class="contact-info">
-                              <h3>92 300 1234567 </h3>
+                              <h3>+92 311 0216858 </h3>
                               <p>Give us a call</p>
                           </div>
                           <!-- End Contact Info -->
@@ -489,13 +522,26 @@
   </div>
   <!-- End Copyright -->
   <!-- Back to top -->
-  <div id="back-to-top" class="back-to-top">
-      <button class="btn btn-dark" title="Back to Top"  style="display: block;">
-        <a href="juni.html"></a>
-          <i class="fa fa-angle-up"></i>
-      </button>
-  </div>
+  <a id="button"></a>
   <!-- End Back to top -->
 </footer>
 </body>
+<script>
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
 </html>

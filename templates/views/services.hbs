@@ -21,6 +21,37 @@
   padding-left:30px;
   padding-right:30px;
 }
+/* SERVICES */
+.services {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  text-align: center;
+}
+
+.services .service .icon img {
+  max-width: 100px;
+}
+
+.services .service {
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.services .service h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 20px;
+  color: var(--secondary-color);
+}
+
+.services .service p {
+  line-height: normal;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
 .extra-div
 {
  background-color: #fff;
@@ -111,9 +142,12 @@ img.mainresponsive { width: 1550px; }
 }
 img.mainresponsive { height: auto; }
 
-
+.bg-main{
+  background-image: url(https://i.ibb.co/Kqwfmx7/Group-11679.png);
+}
 </style>
-</body>
+<body> 
+<div class="bg-main">  
 {{> nav}}
 
 
@@ -138,61 +172,105 @@ img.mainresponsive { height: auto; }
         </div>
         </div>
          <div class="col-md-6 col-12 ">
-           <img class="responsive" src="https://fuertedevelopers.com/assets/img/projects/digitalmarketingg.gif">
+           <img class="responsive" src="https://i.ibb.co/NFwDKmd/2.gif">
         </div>
     </div>
 </div>
-
-<div class="container-fluid">
-    <div class="row justify-content-around py-5">
-        <div class="col-md-4 extra-div">
-            <a href="#">
-          <img src="https://img.icons8.com/nolan/64/mobile-order.png" class="img-responsive center-block d-block mx-auto"/>
-        </a>
-        <h4 class="pt-3" style="text-align: center;">WEB & Mobile</h4>
-            <p style="text-align: center;">Get a professional website developed to attract global Customers. Convert Trafic to Sales. Custom PHP Portal, CMS (WP) Website, E-commerce, Online Shopping Portal.</p>
-        </div>
-        <div class="col-md-4 extra-div ">
-            <a href="#">
-          <img src="https://img.icons8.com/nolan/64/omnichannel.png" class="img-responsive center-block d-block mx-auto"/>
-        </a>
-        <h4 class="pt-3" style="text-align: center;">Digital Marketing</h4>
-            <p style="text-align: center;">We offers premium digital advertising for brands that want their digital presence to be known on various platforms. We keep a close eye on all the different aspects of your campaign and help you advertise your brand.</p>
-        </div>
-    </div>
-    <div class="row justify-content-around ">
-        <div class="col-md-4 extra-div">
-            <a href="#">
-          <img src="https://img.icons8.com/nolan/64/courage-symbol.png" class="img-responsive center-block d-block mx-auto"/>
-        </a>
-        <h4 class="pt-3" style="text-align: center;">Graphic Designing</h4>
-            <p style="text-align: center;">Creative and Latest Fashioner Designing to Logo, Stationary, Product Box, PanaFlax, Web Banner. Design for Digital Screen, Offset Printing, Screen Printing and Digital Printing.</p>
-        </div>
-        <div class="col-md-4 extra-div">
-            <a href="#">
-          <img src="https://img.icons8.com/nolan/64/camera.png" class="img-responsive center-block d-block mx-auto"/>
-        </a>
-        <h4 class="pt-3" style="text-align: center;">Product Photography</h4>
-            <p style="text-align: center;">We take our photography seriously! Photography is an art and with the advent of the digital world, the scope is larger than ever. Whether you are looking for corporate photography services or other photography services.</p>
-        </div>
-    </div>
-    <div class="row justify-content-around ">
-        <div class="col-md-4 extra-div">
-            <a href="#">
-          <img src="https://img.icons8.com/nolan/64/server.png" class="img-responsive center-block d-block mx-auto"/>
-        </a>
-        <h4 class="pt-3" style="text-align: center;">Domain And Hosting</h4>
-            <p style="text-align: center;">We provider of top web hosting, offering solid performance, extreme security with full support. Along with our affordable shared hosting, VPS, and dedicated server and we also offer domain registration at a low price.</p>
-        </div>
-        <div class="col-md-4 extra-div mb-5">
-            <a href="#">
-          <img src="https://img.icons8.com/nolan/64/book.png" class="img-responsive center-block d-block mx-auto"/>
-        </a>
-        <h4 class="pt-3" style="text-align: center;">Content Creation</h4>
-            <p style="text-align: center;">Content creation is the lifeblood of any digital venture. Make content creation easy and attractive with us creatively gifted ingenious team. Captivate your audience with some of the most eye-catching and delightfully origina</p>
-        </div>
-    </div>
 </div>
+<section id="services">
+      <div class="services container">
+        <h2 style="text-align: center; font-weight: 600;">Services <span style="color: blueviolet; font-size: 3.2rem;">We</span>  Offer</h2>
+        <div class="row">
+          <div class="col-md-4 col-12">
+        <div class="service">
+          <div class="icon">
+            <img
+              src="https://github.com/bradtraversy/creative-agency-website/blob/master/images/001.png?raw=true"
+              alt=""
+            />
+          </div>
+          <h3>Graphic Design</h3>
+          <p>
+            Creative and Latest Fashioner Designing to Logo, Stationary, Product Box etc.
+          </p>
+        </div>
+        </div>
+       <div class="col-md-4 col-12">
+        <div class="service">
+          <div class="icon">
+            <img
+              src="https://github.com/bradtraversy/creative-agency-website/blob/master/images/002.png?raw=true"
+              alt=""
+            />
+          </div>
+          <h3>WEB DEVELOPMENT</h3>
+          <p>
+            Your brand is as good as it looks online – so we’ll make it pop till they beg us to stop.
+          </p>
+        </div>
+        </div>
+        <div class="col-md-4 col-12">
+        <div class="service">
+          <div class="icon">
+            <img
+              src="https://github.com/bradtraversy/creative-agency-website/blob/master/images/003.png?raw=true"
+              alt=""
+            />
+          </div>
+          <h3>SEO</h3>
+          <p>
+            Its time to rank your website and convert them into leads,traffic and even sales..
+          </p>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-12">
+        <div class="service">
+          <div class="icon">
+            <img
+              src="https://github.com/bradtraversy/creative-agency-website/blob/master/images/004.png?raw=true"
+              alt=""
+            />
+          </div>
+          <h3>DIGITAL MARKTING</h3>
+          <p>
+            Your Digital Strategy is so much more than a mere plan – it’s your voice, make sure it’s loud.
+          </p>
+        </div>
+        </div>
+       <div class="col-md-4 col-12">
+        <div class="service">
+          <div class="icon">
+            <img
+              src="https://github.com/bradtraversy/creative-agency-website/blob/master/images/005.png?raw=true"
+              alt=""
+            />
+          </div>
+          <h3>APP DEVELOPMENT</h3>
+          <p>
+            Imagine a new world – an alternate reality. We’ll work together to bring it to lif
+          </p>
+        </div>
+        </div>
+        <div class="col-md-4 col-12">
+        <div class="service">
+          <div class="icon">
+            <img
+              src="https://github.com/bradtraversy/creative-agency-website/blob/master/images/006.png?raw=true"
+              alt=""
+            />
+          </div>
+          <h3>BRAND IDENTITY</h3>
+          <p>
+           Any brand without an identity is a bird without wings, come to us and we’ll help you fly.
+          </p>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    
 {{> footer}}
 
 </body>
